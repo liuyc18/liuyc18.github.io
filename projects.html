@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects - My Portfolio</title>
+  <style>
+    /* Basic Reset & Font */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    /* Header / Navbar */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      font-size: 1rem;
+      padding: 0.5rem 0.75rem;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #ebebeb;
+      color: #d9534f;
+    }
+
+    /* Main Content */
+    main {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+    h1 {
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    /* Project List Grid */
+    .project-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    /* Project Card */
+    .project-item {
+      background-color: #fff;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Project Image */
+    .project-img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+      margin-bottom: 0.75rem;
+      object-fit: cover; /* Ensures image respects container ratio if needed */
+    }
+
+    .project-item h2 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .project-item p {
+      line-height: 1.6;
+      margin-bottom: 0.75rem;
+      font-size: 0.95rem;
+    }
+
+    /* “View Details” Link */
+    .details-link {
+      color: #d9534f;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-top: auto; /* Push this link to the bottom if you want consistent spacing */
+    }
+    .details-link:hover {
+      text-decoration: underline;
+      color: #bf413e;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      background-color: #ffffff;
+      padding: 1rem;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    }
+    footer p {
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo"><a href="index.html", style="color: #000000; text-decoration: none;">Liu Yichao</a></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" style="color:#d9534f;">Projects</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>My Projects</h1>
+    <section class="project-list">
+      
+      <!-- Project Card 1 -->
+      <article class="project-item">
+        <!-- Replace with your own image or screenshot -->
+        <img 
+          src="https://via.placeholder.com/600x400" 
+          alt="Project 1 Screenshot" 
+          class="project-img" 
+        />
+        <h2>Project Title 1</h2>
+        <p>
+          A short description of your project. Mention tech stack, goals, or notable features. 
+        </p>
+        <a href="#" class="details-link">View Details</a>
+      </article>
+
+      <!-- Project Card 2 -->
+      <article class="project-item">
+        <!-- Replace with your own image or screenshot -->
+        <img 
+          src="https://via.placeholder.com/600x400?text=Project+2" 
+          alt="Project 2 Screenshot" 
+          class="project-img" 
+        />
+        <h2>Project Title 2</h2>
+        <p>
+          Another project’s short description. You can link to GitHub, a live demo, or show 
+          sample images of your interface.
+        </p>
+        <a href="#" class="details-link">View Details</a>
+      </article>
+
+      <!-- Add more project items as needed -->
+      <article class="project-item">
+        <img 
+          src="https://via.placeholder.com/600x400?text=Project+3" 
+          alt="Project 3 Screenshot" 
+          class="project-img" 
+        />
+        <h2>Project Title 3</h2>
+        <p>
+          Some text describing the project. This can be about the goals, challenge, 
+          or interesting features you implemented.
+        </p>
+        <a href="#" class="details-link">View Details</a>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+  </footer>
+</body>
+</html>

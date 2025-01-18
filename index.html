@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <style>
+    /* Basic Reset & Font */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    /* Header / Navbar */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      font-size: 1rem;
+      padding: 0.5rem 0.75rem;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #ebebeb;
+      color: #d9534f; /* highlight color on hover */
+    }
+
+    /* Main Container: 2-column layout */
+    main {
+      display: flex;
+      max-width: 1200px;
+      margin: 2rem auto;
+      gap: 2rem;
+      padding: 0 1rem;
+    }
+
+    /* Left Column (Sidebar) */
+    aside {
+      flex: 0 0 25%; /* Adjust width as needed (e.g., 20% or 30%) */
+      background-color: #ffffff;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      border-radius: 4px;
+    }
+    .avatar {
+      display: block;
+      width: 100%;
+      max-width: 150px; /* Limit avatar size */
+      height: auto;
+      border-radius: 50%;
+      margin: 0 auto 1rem; /* Center avatar, add space below */
+    }
+    .contact-info {
+      margin-top: 1rem;
+    }
+    .contact-info h2 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .contact-info p {
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+      font-size: 0.95rem;
+    }
+
+    /* Right Column */
+    section {
+      flex: 1; /* Takes remaining space */
+    }
+    section h1 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+    section .intro-paragraph {
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+    section h2 {
+      font-size: 1.2rem;
+      margin: 1.5rem 0 0.75rem;
+      font-weight: 600;
+    }
+    section ul {
+      margin-left: 1.2rem;
+      margin-bottom: 1rem;
+      list-style: disc;
+    }
+    section ul li {
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      background-color: #ffffff;
+      padding: 1rem;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    }
+    footer p {
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with Right-Aligned Navbar -->
+  <header>
+    <div class="logo"><a href="index.html", style="color: #000000; text-decoration: none;">Liu Yichao</a></div>
+    <nav>
+      <ul>
+        <li><a href="index.html" style="color:#d9534f;">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Left Column (Sidebar) -->
+    <aside>
+      <!-- Replace with your actual avatar image -->
+      <img 
+        src="./img/miyabi.jpeg" 
+        alt="Avatar" 
+        class="avatar"
+      />
+
+      <div class="contact-info">
+        <p><strong>Email:</strong> y-liu@comp.nus.edu.sg</p>
+      </div>
+    </aside>
+
+    <!-- Right Column (Main Content) -->
+    <section>
+      <h1>[Your Name or Position Title]</h1>
+
+      <!-- Intro or Overview Paragraph -->
+      <p class="intro-paragraph">
+        Hello! I’m a [Your Current Role/Profession]. Welcome to my personal site, 
+        where you can learn more about my background, areas of interest, and 
+        current endeavors.
+      </p>
+
+      <!-- Education Background -->
+      <h2>Education Background</h2>
+      <ul>
+        <li>B.S. in [Field], [University Name] (Year-Year)</li>
+        <li>M.S. in [Field], [University Name] (Year-Year)</li>
+        <li>Ph.D. in [Field], [University Name] (Year-Year)</li>
+      </ul>
+
+      <!-- Research Interests -->
+      <h2>Research Interests</h2>
+      <ul>
+        <li>[Research Area 1]: brief description of your focus or interest.</li>
+        <li>[Research Area 2]: brief description of your focus or interest.</li>
+        <li>[Research Area 3]: brief description of your focus or interest.</li>
+      </ul>
+
+      <!-- Recent News or Updates -->
+      <h2>Recent News</h2>
+      <ul>
+        <li>[Month Year] - Publication, project release, or conference talk.</li>
+        <li>[Month Year] - Another milestone, achievement, or event.</li>
+        <li>[Month Year] - Grant awarded, collaboration started, etc.</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <!-- <footer>
+    <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+  </footer> -->
+</body>
+</html>
