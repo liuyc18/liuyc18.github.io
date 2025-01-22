@@ -2,7 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Blogs - Yichao Liu's Page</title>
+  <script>
+    // Define the root variable
+    var root = './';
+    document.title = "Yichao Liu $ ~ / Blogs";
+    
+    // Update links dynamically
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("home-link").href = root + "index.html";
+        document.getElementById("projects-link").href = root + "projects.html";
+        document.getElementById("blogs-link").href = root + "blogs.html";
+        document.getElementById("contact-link").href = root + "contact.html";
+        document.getElementById("logo-link").href = root + "index.html";
+    });
+
+    
+
+  </script>
   <style>
     /* Reuse similar styling from index.html */
     * {
@@ -104,18 +120,16 @@
 
     <!-- Example post -->
     <article>
-      <h2><a href="./blogs/test_mathjax.html">MathJax</a></h2>
-      <p>Published on: 2025-01-01</p>
+      <h2><a href="./blogs/test_mathjax.html">MathJax Testing</a></h2>
       <p>
-        This is an example of a blog post. Talk about your experiences, share insights, 
-        or anything else interesting. 
+        This is a test of MathJax.
       </p>
     </article>
 
     <!-- Add more blog posts here -->
     <article>
-      <h2>Post Title 2</h2>
-      <p>Published on: 2025-01-10</p>
+      <h2><a href="./blogs/xiaoaojianghu.html">中文test</a></h2>
+      <p> First Create:  Last Modified: </p>
       <p>
         Another blog post content. You can format it with headings, images, code snippets, 
         etc., as needed.

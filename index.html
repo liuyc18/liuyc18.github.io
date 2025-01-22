@@ -2,7 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Yichao Liu's Page</title>
+  <script>
+    // Define the root variable
+    var root = './';
+    document.title = "Yichao Liu's Page";
+    
+    // Update links dynamically
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("home-link").href = root + "index.html";
+        document.getElementById("projects-link").href = root + "projects.html";
+        document.getElementById("blogs-link").href = root + "blogs.html";
+        document.getElementById("contact-link").href = root + "contact.html";
+        document.getElementById("logo-link").href = root + "index.html";
+    });
+
+    
+
+  </script>
   <style>
     /* Basic Reset & Font */
     :root{
@@ -187,7 +203,7 @@
           <img src="./img/mail_logo.png" 
                alt="Apple Mail Logo" style="width: 16px; height: 16px; vertical-align: middle;"> 
           <strong>Email:</strong> 
-          <span id="email" onclick="copyEmail()" style="cursor: pointer; color: var(--main-theme-color); text-decoration: underline;">y-liu@comp.nus.edu.sg</span>
+          <span id="email" onclick="copyEmail()" style="cursor: pointer; color: var(--main-theme-color); text-decoration: underline;">yichao.liu@u.nus.edu</span>
         </p>
       </div>
       

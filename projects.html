@@ -2,7 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Projects - Yichao Liu's Page</title>
+  <script>
+    // Define the root variable
+    var root = './';
+    document.title = "Yichao Liu $ ~ / Projects";
+    
+    // Update links dynamically
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("home-link").href = root + "index.html";
+        document.getElementById("projects-link").href = root + "projects.html";
+        document.getElementById("blogs-link").href = root + "blogs.html";
+        document.getElementById("contact-link").href = root + "contact.html";
+        document.getElementById("logo-link").href = root + "index.html";
+    });
+
+    
+
+  </script>
   <style>
     /* Basic Reset & Font */
     * {
