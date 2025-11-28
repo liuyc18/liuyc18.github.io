@@ -1,0 +1,104 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const projects = [
+  {
+    title: 'Personal Website',
+    description: 'My personal portfolio and blog built with Astro.',
+    tags: ['Astro', 'React', 'TypeScript'],
+    link: '#'
+  },
+  {
+    title: 'Course Project (IT5007)',
+    description: 'A course project for IT5007. I was the main developer.',
+    tags: ['Coursework', 'Public'],
+    link: 'https://github.com/liuyc18/course-project-g101'
+  },
+  {
+    title: 'Project Placeholder',
+    description: 'More exciting projects coming soon!',
+    tags: ['Coming Soon'],
+    link: '#'
+  }
+];
+---
+
+<Layout title="Projects | Yichao Liu">
+  <h1>Projects</h1>
+  <p class="subtitle">A collection of my work and experiments.</p>
+
+  <div class="projects-grid">
+    {projects.map((project) => (
+      <div class="project-card">
+        <h2>{project.title}</h2>
+        <p>{project.description}</p>
+        <div class="tags">
+          {project.tags.map((tag) => (
+            <span class="tag">{tag}</span>
+          ))}
+        </div>
+        <a href={project.link} class="view-project">View Project &rarr;</a>
+      </div>
+    ))}
+  </div>
+</Layout>
+
+<style>
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  .subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 3rem;
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  .project-card {
+    padding: 2rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  h2 {
+    margin: 0 0 1rem;
+    font-size: 1.5rem;
+  }
+  p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+  }
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .tag {
+    background: #f0f0f0;
+    padding: 0.25rem 0.75rem;
+    border-radius: 100px;
+    font-size: 0.85rem;
+    color: #444;
+  }
+  .view-project {
+    color: rgb(var(--accent));
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .view-project:hover {
+    text-decoration: underline;
+  }
+</style>

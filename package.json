@@ -9,6 +9,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.16.2"
+    "@astrojs/mdx": "^4.3.12",
+    "astro": "^5.16.2",
+    "rehype-mathjax": "^7.1.0",
+    "remark-math": "^6.0.0"
   }
 }
